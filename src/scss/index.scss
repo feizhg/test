@@ -37,12 +37,14 @@ body,
 }
 
 .record {
-    @include flex(column);
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 15px;
+    &>div {
+        @include flex();
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 15px;
+    }
     dl {
-        width: 48%;
+        width: 45%;
         border-radius: 15px;
         background: #fff;
         box-shadow: 0 0 5px rgba(0, 0, 0, .6);

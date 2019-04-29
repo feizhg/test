@@ -1,0 +1,31 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feizhg/test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feizhg/test/issues"
+  },
+  "homepage": "https://github.com/feizhg/test#readme",
+  "devDependencies": {
+    "gulp": "^4.0.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webserver": "^0.9.1"
+  }
+}
