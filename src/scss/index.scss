@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+@mixin pos($p:relative) {
+    position: $p;
+}
+
+@mixin flex($d:row) {
+    display: flex;
+    flex-direction: $d;
+}
+
+%full {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+html,
+body,
+.wrapper {
+    @extend %full;
+}
+
+.wrapper {
+    h3 {
+        line-height: 40px;
+        padding: 0 15px;
+    }
+}
+
+.record {
+    @include flex(column);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+    dl {
+        width: 48%;
+        border-radius: 15px;
+        background: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .6);
+        margin-top: 20px;
+    }
+    dt {
+        font-size: 30px;
+        line-height: 60px;
+        color: skyblue;
+    }
+    h4 {
+        font-size: 30px;
+        color: #000;
+    }
+    p {
+        color: #ccc;
+    }
+}
